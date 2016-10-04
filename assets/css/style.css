@@ -1,0 +1,89 @@
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+}
+.error{
+	color:red;
+}
+.navbar{
+	margin-bottom:5px;
+}
+.table{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.pagination{
+	margin:0px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+	color: #d9534f;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+	background-color: #d9534f;
+	border-color: #d9534f;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #d9534f;
+}
+
+.breadcrumb,.alert,.panel{
+	margin-bottom:5px;
+}
+.navbar-btn{
+	margin-right:5px;
+}
+.tab-content{
+	position:fixed;
+	top:0px;
+	right:0px;
+	background:#d9534f;
+	padding:10px;
+	border-radius:0px 0px 0px 5px;
+	z-index:80000;
+}
+
+.panel-chat{
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	z-index:1000;
+	margin:0px;
+}
+.chat{
+	height:400px;
+	overflow-x:scroll;
+}
+.panel-chat-heading{
+	cursor:pointer;
+}
+.table{
+	font-size:12px;
+}
+.label{
+	padding:4px;
+}
+.label-footer{
+    margin:7px 0;
+}
+hr{
+	margin:5px;
+}
+section.content-header{
+	padding-top:0;
+}
+section.breadcrumb{
+	padding:5px;
+}
+
+section.content-header > .breadcrumb{
+	position:static;
+}
