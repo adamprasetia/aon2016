@@ -249,7 +249,7 @@ $config['encryption_key'] = 'AdamGantengMaksimal';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'aon_cca_2015_session';
+$config['sess_cookie_name']		= 'aon_cca_2016_session';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= TRUE;
 $config['sess_encrypt_cookie']	= FALSE;
