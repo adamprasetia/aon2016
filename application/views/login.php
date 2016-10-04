@@ -33,7 +33,7 @@
   					<?=img(array('src'=>'assets/img/aon.png','style'=>'width:100%'))?>
 	    		</div>	
 					<div class="panel-footer">
-						ADirect - Aon | Data Entry System 2015
+						ADirect - Aon | Data Entry System 2016
 	    		</div>	
 					<div class="panel-body">
 						<?=validation_errors()?>
