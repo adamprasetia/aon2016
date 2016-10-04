@@ -59,7 +59,7 @@
 	<?=form_close()?>
   <footer class="footer">
     <div class="container">
-      <p class="text-muted">Copyright &copy; 2015 ADirect</p>
+      <p class="text-muted">Copyright &copy; 2016 ADirect</p>
     </div>
   </footer>
 </body>
