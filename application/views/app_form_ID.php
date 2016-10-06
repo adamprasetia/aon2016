@@ -3,8 +3,6 @@
 <?=form_open($action)?>
 <section class="content-header breadcrumb">
 	<input type="hidden" name="country" value="ID">
-	Vendor : <?=form_dropdown('vendor',$this->mdl_vendor->dropdown(),set_value('vendor',(isset($row->vendor)?$row->vendor:"")),'autofocus')?>
-	<?=form_input(array('name'=>'vendor_code','maxlength'=>'50','placeholder'=>'Vendor Nomber','autocomplete'=>'off','value'=>set_value('vendor_code',(isset($row->vendor_code)?$row->vendor_code:""))))?>
 	Form Code : <?=form_input(array('name'=>'code','type'=>'number','maxlength'=>'10','autocomplete'=>'off','value'=>set_value('code',(isset($row->code)?$row->code:""))))?>
 	<ol class="breadcrumb">
 	  <li class="active"><?=$heading?></li>

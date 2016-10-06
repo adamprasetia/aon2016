@@ -18,8 +18,6 @@ class App extends MY_Controller {
 		
 		$head_data = array(
 			'country'=>'Country'
-			,'vendor_name'=>'Vendor'
-			,'vendor_code'=>'Vendor Code'
 			,'code'=>'Code'
 			,'quesioner'=>'Quesioner'
 			,'com_1'=>'Kom1'
@@ -45,10 +43,8 @@ class App extends MY_Controller {
 			$this->table->add_row(
 				$i++
 				,$r->country
-				,$r->vendor_name
-				,$r->vendor_code
 				,$r->code
-				,$r->quesioner
+				,str_replace(',', ' ', $r->quesioner)
 				,$r->com_1	
 				,$r->com_2	
 				,($r->dem_1<>0?$r->dem_1:'')
@@ -77,8 +73,6 @@ class App extends MY_Controller {
 		$this->lib_general->display('app',$data);
 	}	
 	function _set_rules(){
-		$this->form_validation->set_rules('vendor','Vendor','trim|required');
-		$this->form_validation->set_rules('vendor_code','Vendor Code','trim');
 		$this->form_validation->set_rules('code','Form Code','trim|required|callback__check_double');
 		for($i=1;$i<=55;$i++){
 			$this->form_validation->set_rules('q'.$i,'Q-'.$i,'trim');
@@ -135,8 +129,6 @@ class App extends MY_Controller {
 		}
 		$data = array(
 			'country'=>$this->input->post('country')
-			,'vendor'=>$this->input->post('vendor')
-			,'vendor_code'=>$this->input->post('vendor_code')
 			,'code'=>$this->input->post('code')
 			,'quesioner'=>$quesioner
 			,'com_1'=>$this->input->post('com_1')
