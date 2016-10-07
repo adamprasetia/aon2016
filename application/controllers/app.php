@@ -157,7 +157,7 @@ class App extends MY_Controller {
 			$data['date_create']=date('Y-m-d H:i:s');
 			$this->mdl_app->add($data);
 			$this->session->set_flashdata('alert','<div class="alert alert-success">Entry Success</div>');
-			redirect('app/add/'.$country);
+			redirect('app/add/'.$country.'?code='.($this->input->post('code')+1));
 		}
 	}
 	function edit($id){

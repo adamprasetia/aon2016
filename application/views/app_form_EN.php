@@ -3,7 +3,7 @@
 <?=form_open($action)?>
 <section class="content-header breadcrumb">
 	<input type="hidden" name="country" value="EN">
-	Form Code : <?=form_input(array('name'=>'code','type'=>'number','maxlength'=>'10','autocomplete'=>'off','value'=>set_value('code',(isset($row->code)?$row->code:""))))?>
+	Form Code : <?=form_input(array('autofocus'=>'autofocus','name'=>'code','type'=>'number','maxlength'=>'10','autocomplete'=>'off','value'=>set_value('code',(isset($row->code)?$row->code:($this->input->get('code')?$this->input->get('code'):'')))))?>
 	<ol class="breadcrumb">
 	  <li class="active"><?=$heading?></li>
 	  <li>User Entry : <b><?=$this->lib_general->get_username(isset($row->user_create)?$row->user_create:$this->session->userdata('user_login'))?></b></li>
