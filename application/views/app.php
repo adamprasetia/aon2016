@@ -25,9 +25,6 @@
 			<div class="form-group">
 				<?=form_dropdown('country',array(''=>'- Country -','ID'=>'Indonesia','EN'=>'Inggris'),set_value('country',$this->input->get('country')),'onchange="submit()" class="form-control input-sm"')?>
 			</div>
-			<div class="form-group">
-				<?=form_dropdown('vendor',$this->mdl_vendor->dropdown(),set_value('vendor',$this->input->get('vendor')),'onchange="submit()" class="form-control input-sm"')?>
-			</div>
 			<button class="btn btn-primary btn-sm" type="submit"><span class="glyphicon glyphicon-filter"></span> Filter</button>			
 		<?=form_close()?>
 		<div class="table-responsive">
