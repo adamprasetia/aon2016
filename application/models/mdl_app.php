@@ -4,10 +4,9 @@ class Mdl_app extends CI_Model {
 	var $tbl_name = 'app';
 	function query(){
 		$data[] = $this->search();
-		$data[] = $this->db->select('app.*,user.fullname,vendor.name as vendor_name');
+		$data[] = $this->db->select('app.*,user.fullname,divisi.divisi,divisi.posisi');
 		$data[] = $this->where('country','app.country');
 		$data[] = $this->where('de','app.user_create');
-		$data[] = $this->where('vendor','vendor.id');
 		$data[] = $this->where_date('date','date_format(app.date_create,\'%Y-%m-%d\')');
 		if($this->session->userdata('user_level')==3){
 			$data[] = $this->db->where('date_format(app.date_create,\'%Y-%m-%d\')',date('Y-m-d'));
@@ -15,7 +14,7 @@ class Mdl_app extends CI_Model {
 		}
 		$data[] = $this->db->select('app.*,user.fullname');
 		$data[] = $this->db->join('user','app.user_create=user.id','left');		
-		$data[] = $this->db->join('vendor','app.vendor=vendor.id','left');		
+		$data[] = $this->db->join('divisi','app.dem_1=divisi.code','left');		
 		return $data;
 	}
 	function get_last_code(){
