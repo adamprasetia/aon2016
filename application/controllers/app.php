@@ -47,7 +47,7 @@ class App extends MY_Controller {
 				,str_replace(',', ' ', $r->quesioner)
 				,$r->com_1	
 				,$r->com_2	
-				,($r->dem_1<>0?$r->dem_1:'')
+				,$r->divisi_no.','.$r->posisi_no
 				,($r->dem_2<>0?$r->dem_2:'')
 				,($r->dem_3<>0?$r->dem_3:'')
 				,($r->dem_4<>0?$r->dem_4:'')
