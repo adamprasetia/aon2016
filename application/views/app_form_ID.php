@@ -89,7 +89,7 @@
 				<?=form_label('1. Anda berasal dari function dan unit operation mana ?')?>
 				<p>Jawab : <?=form_dropdown('dem_1',$this->mdl_divisi->dropdown('ID'),set_value('dem_1',(isset($row->dem_1)?$row->dem_1:"")))?></p><hr>
 				<?=form_label('2. Yang mana dari pilihan di bawah ini yang paling baik menjelaskan peran Anda dalam organisasi')?>
-				<p>Jawab : <?=form_dropdown('dem_2',dropnum(5),set_value('dem_2',(isset($row->dem_2)?$row->dem_2:"")))?></p><hr>
+				<p>Jawab : <?=form_dropdown('dem_2',dropnum(3),set_value('dem_2',(isset($row->dem_2)?$row->dem_2:"")))?></p><hr>
 				<?=form_label('3. Yang mana dari pilihan di bawah ini yang menjelaskan lama bekerja Anda')?>
 				<p>Jawab : <?=form_dropdown('dem_3',dropnum(9),set_value('dem_3',(isset($row->dem_3)?$row->dem_3:"")))?></p><hr>
 				<?=form_label('4. Yang mana dari pilihan di bawah ini yang menjelaskan status pekerjaan Anda dalam organisasi')?>
