@@ -4,7 +4,7 @@ class Mdl_app extends CI_Model {
 	var $tbl_name = 'app';
 	function query(){
 		$data[] = $this->search();
-		$data[] = $this->db->select('app.*,user.fullname,divisi.divisi,divisi.posisi');
+		$data[] = $this->db->select('app.*,user.fullname,divisi.divisi_no,divisi.posisi_no');
 		$data[] = $this->where('country','app.country');
 		$data[] = $this->where('de','app.user_create');
 		$data[] = $this->where_date('date','date_format(app.date_create,\'%Y-%m-%d\')');

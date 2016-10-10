@@ -366,8 +366,8 @@ class App extends MY_Controller {
 			$active_sheet->setCellValue('BF'.$i, $quesioner[55-1]);
 			$active_sheet->setCellValue('BG'.$i, strtolower($r->com_1));
 			$active_sheet->setCellValue('BH'.$i, strtolower($r->com_2));
-			$active_sheet->setCellValue('BI'.$i, $r->divisi);
-			$active_sheet->setCellValue('BJ'.$i, $r->posisi);
+			$active_sheet->setCellValue('BI'.$i, $r->divisi_no);
+			$active_sheet->setCellValue('BJ'.$i, $r->posisi_no);
 			$active_sheet->setCellValue('BK'.$i, ($r->dem_2<>0?$r->dem_2:""));
 			$active_sheet->setCellValue('BL'.$i, ($r->dem_3<>0?$r->dem_3:""));
 			$active_sheet->setCellValue('BM'.$i, ($r->dem_4<>0?$r->dem_4:""));

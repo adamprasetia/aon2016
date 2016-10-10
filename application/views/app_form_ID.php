@@ -97,7 +97,7 @@
 				<?=form_label('5. Yang mana dari pilihan di bawah ini yang menjelaskan jenis kelamin Anda')?>
 				<p>Jawab : <?=form_dropdown('dem_5',dropnum(2),set_value('dem_5',(isset($row->dem_5)?$row->dem_5:"")))?></p>
 				<?=form_label('6. Silakan pilih kategori usia Anda:')?>
-				<p>Jawab : <?=form_dropdown('dem_6',array(''=>'','1'=>'1','2'=>'2','3'=>'3','5'=>'5','7'=>'7'),set_value('dem_6',(isset($row->dem_6)?$row->dem_6:"")))?></p>
+				<p>Jawab : <?=form_dropdown('dem_6',dropnum(5),set_value('dem_6',(isset($row->dem_6)?$row->dem_6:"")))?></p>
 			</div>	
 		</div>	
 	</div>	
