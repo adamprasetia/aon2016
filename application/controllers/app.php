@@ -216,6 +216,7 @@ class App extends MY_Controller {
 		return $str;
 	}	
 	function export(){
+		$country = $this->input->get('country');
 		ini_set('memory_limit','-1'); 
 
 		$order_column = ($this->input->get('order_column')<>''?$this->input->get('order_column'):'id');
@@ -291,9 +292,15 @@ class App extends MY_Controller {
 		$active_sheet->setCellValue('BH1', 'OE2 : - What do you like best about working at this organisation');
 		$active_sheet->setCellValue('BI1', 'Demog 1 - Business Department');
 		$active_sheet->setCellValue('BJ1', 'Demog 1a - Business team');
-		$active_sheet->setCellValue('BK1', 'Demog 2 - Type of Job');
-		$active_sheet->setCellValue('BL1', 'Demog 3 - Tenure Banding');
-		$active_sheet->setCellValue('BM1', 'Demog 4 - Employment Status');
+		if ($country == 'ID') {
+			$active_sheet->setCellValue('BK1', 'Demog 2 - Type of Job');		
+			$active_sheet->setCellValue('BL1', 'Demog 3 - Tenure Banding');
+			$active_sheet->setCellValue('BM1', 'Demog 4 - Employment Status');
+		}else{
+			$active_sheet->setCellValue('BK1', 'Demog 2 - location');		
+			$active_sheet->setCellValue('BL1', 'Demog 3 - Type of Job');
+			$active_sheet->setCellValue('BM1', 'Demog 4 - Tenure Banding');
+		}
 		$active_sheet->setCellValue('BN1', 'Demog 5 - Gender');
 		$active_sheet->setCellValue('BO1', 'Demog 6 - Age');
 		$active_sheet->setCellValue('BP1', 'Audit');
