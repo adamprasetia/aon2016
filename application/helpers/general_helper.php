@@ -244,3 +244,364 @@ function getBrowser($agent = null){
         'pattern'    => $pattern
     );
 }
+function ex_quesioner($id){
+    switch ($id) {
+        case '1':
+            return '1 - strongly disagree';
+            break;
+        
+        case '2':
+            return '2 - disagree';
+            break;
+        
+        case '3':
+            return '3- slightly disagree';
+            break;
+        
+        case '4':
+            return '4 - slightly agree';
+            break;
+        
+        case '5':
+            return '5 - agree';
+            break;
+        
+        case '6':
+            return '6 - strongly agree';
+            break;
+        
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_2_id($id){
+    switch ($id) {
+        case '1':
+            return '1 - I lead people who also lead teams';
+            break;
+        
+        case '2':
+            return '2 - I lead a team';
+            break;
+        
+        case '3':
+            return '3 - I have no direct reports';
+            break;
+                
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_3_id($id){
+    switch ($id) {
+        case '1':
+            return '1 - less than 6 months';
+            break;
+        
+        case '2':
+            return '2 - more than 6 months but less than 1 year';
+            break;
+        
+        case '3':
+            return '3 - 1 to 2 years';
+            break;
+        
+        case '4':
+            return '4 - 2 to 5 years';
+            break;
+        
+        case '5':
+            return '5 - 6 to 10 years';
+            break;
+        
+        case '6':
+            return '6 - 11-15 years';
+            break;
+        
+        case '7':
+            return '7 - 16 -20 years';
+            break;
+        
+        case '8':
+            return '8 - 21 to 25 years';
+            break;
+        
+        case '9':
+            return '9 - more than 26 years';
+            break;
+        
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_4_id($id){
+    switch ($id) {
+        case '1':
+            return '1 - Permanent';
+            break;
+        
+        case '2':
+            return '2 - Part time (contract)';
+            break;
+        
+        case '3':
+            return '3 - Casual';
+            break;
+
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_5_id($id){
+    switch ($id) {
+        case '1':
+            return '1 - Male';
+            break;
+        
+        case '2':
+            return '2 - Female';
+            break;
+            
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_6_id($id){
+    switch ($id) {
+        case '1':
+            return '1 - 25 or younger';
+            break;
+        
+        case '2':
+            return '2 - 25 to 34 years old';
+            break;
+            
+        case '3':
+            return '3 - 35-44 years old';
+            break;
+            
+        case '4':
+            return '4 - 45-54 years old';
+            break;
+            
+        case '5':
+            return '5 - 55 years or above';
+            break;
+            
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_2_en($id){
+    switch ($id) {
+        case '1':
+            return '1 - Alotau';
+            break;
+        
+        case '2':
+            return '2 - Buka';
+            break;
+        
+        case '3':
+            return '3 - Central Warehouse';
+            break;
+                
+        case '4':
+            return '4 - Goroka';
+            break;
+                
+        case '5':
+            return '5 - Hagen';
+            break;
+                
+        case '6':
+            return '6 - Head Office';
+            break;
+                
+        case '7':
+            return '7 - Honiara';
+            break;
+                
+        case '8':
+            return '8 - Kainantu';
+            break;
+                
+        case '9':
+            return '9 -Kavieng';
+            break;
+                
+        case '10':
+            return '10 - Kimbe';
+            break;
+                
+        case '11':
+            return '11 - Kokopo';
+            break;
+                
+        case '12':
+            return '12 - Kundiawa';
+            break;
+                
+        case '13':
+            return '13 - Lae Depot';
+            break;
+                
+        case '14':
+            return '14 - Lae Production';
+            break;
+                
+        case '15':
+            return '15 - Madang';
+            break;
+                
+        case '16':
+            return '16 - Mendi';
+            break;
+                
+        case '17':
+            return '17 - Popendetta';
+            break;
+                
+        case '18':
+            return '18 - Port Moresby';
+            break;
+                
+        case '19':
+            return '19 - Raw Materials';
+            break;
+                
+        case '20':
+            return '20 - Vanimo';
+            break;
+                
+        case '21':
+            return '21 - Wabag';
+            break;
+                
+        case '22':
+            return '22 - Western';
+            break;
+                
+        case '23':
+            return '23 - Wewak';
+            break;
+                
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_3_en($id){
+    switch ($id) {
+        case '1':
+            return '1 - I report in to the PNG Country Leadership Team for my bussiness';
+            break;
+        
+        case '2':
+            return '2 - I lead people who also lead teams';
+            break;
+        
+        case '3':
+            return '3 - I lead a team';
+            break;
+        
+        case '4':
+            return '4 - I have no direct reports';
+            break;
+        
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_4_en($id){
+    switch ($id) {
+        case '1':
+            return '1 - Less than 6 months';
+            break;
+        
+        case '2':
+            return '2 - More than 6 months but less than 1 year';
+            break;
+        
+        case '3':
+            return '3 - 1 to less than 2 years';
+            break;
+
+        case '4':
+            return '4 - 2 to 5 years';
+            break;
+
+        case '5':
+            return '5 - 6 to 10 years';
+            break;
+
+        case '6':
+            return '6 - 11-15 years';
+            break;
+
+        case '7':
+            return '7 - 16 - 20 years';
+            break;
+
+        case '8':
+            return '8 - 21 to 25 years';
+            break;
+
+        case '9':
+            return '9 - 26 years or longer';
+            break;
+
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_5_en($id){
+    switch ($id) {
+        case '1':
+            return '1 - Male';
+            break;
+        
+        case '2':
+            return '2 - Female';
+            break;
+            
+        default:
+            return '';
+            break;
+    }
+}
+function ex_dem_6_en($id){
+    switch ($id) {
+        case '1':
+            return '1- Under 25 years';
+            break;
+        
+        case '2':
+            return '2 - 25 to 34 years old';
+            break;
+            
+        case '3':
+            return '3 - 35-44 years old';
+            break;
+            
+        case '4':
+            return '4 - 45 - 54 years old';
+            break;
+            
+        case '5':
+            return '5 - 55 years or above';
+            break;
+            
+        default:
+            return '';
+            break;
+    }
+}
