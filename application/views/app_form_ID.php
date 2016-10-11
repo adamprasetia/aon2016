@@ -63,7 +63,7 @@
 			</div>
 		</div>		
 	</div>	
-	<div class="col-md-3">
+	<div class="col-md-4">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				KOMENTAR
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 	</div>	
-	<div class="col-md-4">
+	<div class="col-md-3">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				DEMOGRAPHIC PERTANYAAN
