@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class fee extends MY_Controller {
-	private $harga = 500;
+	private $harga = 600;
 	function __construct(){
 		parent::__construct();
 		$this->load->model('mdl_fee');
@@ -73,7 +73,7 @@ class fee extends MY_Controller {
 		$pdf->SetTextColor(0,0,0);		
 		$pdf->Cell(90,5,'Total',1,0,'C');
 		$pdf->Cell(30,5,number_format($tot_jumlah,0,',',','),1,0,'R');
-		$pdf->Cell(30,5,number_format(500*$tot_jumlah,0,',',','),1,0,'R');		
+		$pdf->Cell(30,5,number_format($this->harga*$tot_jumlah,0,',',','),1,0,'R');		
 		$pdf->Cell(0,5,'',1,0,'R');		
 		$pdf->Ln(10);
 
