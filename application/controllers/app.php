@@ -290,12 +290,12 @@ class App extends MY_Controller {
 		$active_sheet->setCellValue('BF1', 'Q55 : My direct leader actively role models managing their personal wellbeing ( )');
 		$active_sheet->setCellValue('BG1', 'OE1 : - In a few words, please tell us:One thing you would change to make this organisation a better place to work');
 		$active_sheet->setCellValue('BH1', 'OE2 : - What do you like best about working at this organisation');
-		$active_sheet->setCellValue('BI1', 'Demog 1 - Business Department');
-		$active_sheet->setCellValue('BJ1', 'Demog 1a - Business team');
+		$active_sheet->setCellValue('BI1', 'Demog 1 - Business Function');
+		$active_sheet->setCellValue('BJ1', 'Demog 1a - Business unit');
 		if ($country == 'ID') {
-			$active_sheet->setCellValue('BK1', 'Demog 2 - Type of Job');		
-			$active_sheet->setCellValue('BL1', 'Demog 3 - Tenure Banding');
-			$active_sheet->setCellValue('BM1', 'Demog 4 - Employment Status');
+			$active_sheet->setCellValue('BK1', 'Demog 2 - Role');		
+			$active_sheet->setCellValue('BL1', 'Demog 3 - Length of Services');
+			$active_sheet->setCellValue('BM1', 'Demog 4 - Employment Type');
 		}else{
 			$active_sheet->setCellValue('BK1', 'Demog 2 - location');		
 			$active_sheet->setCellValue('BL1', 'Demog 3 - Type of Job');
