@@ -78,7 +78,7 @@ class Mdl_app extends CI_Model {
 	function search(){
 		$value = $this->input->get('search');
 		if($value <> ''){
-			return $this->db->where('code',$value);
+			return $this->db->where('app.code',$value);
 		}		
 	}
 	function where($id,$field=''){
