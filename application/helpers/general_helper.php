@@ -278,15 +278,15 @@ function ex_quesioner($id){
 function ex_dem_2_id($id){
     switch ($id) {
         case '1':
-            return '1 - I lead people who also lead teams';
+            return 'I lead people who also lead teams';
             break;
         
         case '2':
-            return '2 - I lead a team';
+            return 'I lead a team';
             break;
         
         case '3':
-            return '3 - I have no direct reports';
+            return 'I have no direct reports';
             break;
                 
         default:
@@ -297,39 +297,39 @@ function ex_dem_2_id($id){
 function ex_dem_3_id($id){
     switch ($id) {
         case '1':
-            return '1 - less than 6 months';
+            return 'less than 6 months';
             break;
         
         case '2':
-            return '2 - more than 6 months but less than 1 year';
+            return 'more than 6 months but less than 1 year';
             break;
         
         case '3':
-            return '3 - 1 to 2 years';
+            return '1 to 2 years';
             break;
         
         case '4':
-            return '4 - 2 to 5 years';
+            return '2 to 5 years';
             break;
         
         case '5':
-            return '5 - 6 to 10 years';
+            return '6 to 10 years';
             break;
         
         case '6':
-            return '6 - 11-15 years';
+            return '11-15 years';
             break;
         
         case '7':
-            return '7 - 16 -20 years';
+            return '16 -20 years';
             break;
         
         case '8':
-            return '8 - 21 to 25 years';
+            return '21 to 25 years';
             break;
         
         case '9':
-            return '9 - more than 26 years';
+            return 'more than 26 years';
             break;
         
         default:
@@ -340,15 +340,15 @@ function ex_dem_3_id($id){
 function ex_dem_4_id($id){
     switch ($id) {
         case '1':
-            return '1 - Permanent';
+            return 'Permanent';
             break;
         
         case '2':
-            return '2 - Part time (contract)';
+            return 'Part time (contract)';
             break;
         
         case '3':
-            return '3 - Casual';
+            return 'Casual';
             break;
 
         default:
@@ -359,11 +359,11 @@ function ex_dem_4_id($id){
 function ex_dem_5_id($id){
     switch ($id) {
         case '1':
-            return '1 - Male';
+            return 'Male';
             break;
         
         case '2':
-            return '2 - Female';
+            return 'Female';
             break;
             
         default:
@@ -374,23 +374,23 @@ function ex_dem_5_id($id){
 function ex_dem_6_id($id){
     switch ($id) {
         case '1':
-            return '1 - 25 or younger';
+            return '25 or younger';
             break;
         
         case '2':
-            return '2 - 25 to 34 years old';
+            return '25 to 34 years old';
             break;
             
         case '3':
-            return '3 - 35-44 years old';
+            return '35-44 years old';
             break;
             
         case '4':
-            return '4 - 45-54 years old';
+            return '45-54 years old';
             break;
             
         case '5':
-            return '5 - 55 years or above';
+            return '55 years or above';
             break;
             
         default:
@@ -401,95 +401,95 @@ function ex_dem_6_id($id){
 function ex_dem_2_en($id){
     switch ($id) {
         case '1':
-            return '1 - Alotau';
+            return 'Alotau';
             break;
         
         case '2':
-            return '2 - Buka';
+            return 'Buka';
             break;
         
         case '3':
-            return '3 - Central Warehouse';
+            return 'Central Warehouse';
             break;
                 
         case '4':
-            return '4 - Goroka';
+            return 'Goroka';
             break;
                 
         case '5':
-            return '5 - Hagen';
+            return 'Hagen';
             break;
                 
         case '6':
-            return '6 - Head Office';
+            return 'Head Office';
             break;
                 
         case '7':
-            return '7 - Honiara';
+            return 'Honiara';
             break;
                 
         case '8':
-            return '8 - Kainantu';
+            return 'Kainantu';
             break;
                 
         case '9':
-            return '9 -Kavieng';
+            return 'Kavieng';
             break;
                 
         case '10':
-            return '10 - Kimbe';
+            return 'Kimbe';
             break;
                 
         case '11':
-            return '11 - Kokopo';
+            return 'Kokopo';
             break;
                 
         case '12':
-            return '12 - Kundiawa';
+            return 'Kundiawa';
             break;
                 
         case '13':
-            return '13 - Lae Depot';
+            return 'Lae Depot';
             break;
                 
         case '14':
-            return '14 - Lae Production';
+            return 'Lae Production';
             break;
                 
         case '15':
-            return '15 - Madang';
+            return 'Madang';
             break;
                 
         case '16':
-            return '16 - Mendi';
+            return 'Mendi';
             break;
                 
         case '17':
-            return '17 - Popendetta';
+            return 'Popendetta';
             break;
                 
         case '18':
-            return '18 - Port Moresby';
+            return 'Port Moresby';
             break;
                 
         case '19':
-            return '19 - Raw Materials';
+            return 'Raw Materials';
             break;
                 
         case '20':
-            return '20 - Vanimo';
+            return 'Vanimo';
             break;
                 
         case '21':
-            return '21 - Wabag';
+            return 'Wabag';
             break;
                 
         case '22':
-            return '22 - Western';
+            return 'Western';
             break;
                 
         case '23':
-            return '23 - Wewak';
+            return 'Wewak';
             break;
                 
         default:
@@ -500,19 +500,19 @@ function ex_dem_2_en($id){
 function ex_dem_3_en($id){
     switch ($id) {
         case '1':
-            return '1 - I report in to the PNG Country Leadership Team for my bussiness';
+            return 'I report in to the PNG Country Leadership Team for my bussiness';
             break;
         
         case '2':
-            return '2 - I lead people who also lead teams';
+            return 'I lead people who also lead teams';
             break;
         
         case '3':
-            return '3 - I lead a team';
+            return 'I lead a team';
             break;
         
         case '4':
-            return '4 - I have no direct reports';
+            return 'I have no direct reports';
             break;
         
         default:
@@ -523,39 +523,39 @@ function ex_dem_3_en($id){
 function ex_dem_4_en($id){
     switch ($id) {
         case '1':
-            return '1 - Less than 6 months';
+            return 'Less than 6 months';
             break;
         
         case '2':
-            return '2 - More than 6 months but less than 1 year';
+            return 'More than 6 months but less than 1 year';
             break;
         
         case '3':
-            return '3 - 1 to less than 2 years';
+            return '1 to less than 2 years';
             break;
 
         case '4':
-            return '4 - 2 to 5 years';
+            return '2 to 5 years';
             break;
 
         case '5':
-            return '5 - 6 to 10 years';
+            return '6 to 10 years';
             break;
 
         case '6':
-            return '6 - 11-15 years';
+            return '11-15 years';
             break;
 
         case '7':
-            return '7 - 16 - 20 years';
+            return '16 - 20 years';
             break;
 
         case '8':
-            return '8 - 21 to 25 years';
+            return '21 to 25 years';
             break;
 
         case '9':
-            return '9 - 26 years or longer';
+            return '26 years or longer';
             break;
 
         default:
@@ -566,11 +566,11 @@ function ex_dem_4_en($id){
 function ex_dem_5_en($id){
     switch ($id) {
         case '1':
-            return '1 - Male';
+            return 'Male';
             break;
         
         case '2':
-            return '2 - Female';
+            return 'Female';
             break;
             
         default:
@@ -581,23 +581,23 @@ function ex_dem_5_en($id){
 function ex_dem_6_en($id){
     switch ($id) {
         case '1':
-            return '1- Under 25 years';
+            return 'Under 25 years';
             break;
         
         case '2':
-            return '2 - 25 to 34 years old';
+            return '25 to 34 years old';
             break;
             
         case '3':
-            return '3 - 35-44 years old';
+            return '35-44 years old';
             break;
             
         case '4':
-            return '4 - 45 - 54 years old';
+            return '45 - 54 years old';
             break;
             
         case '5':
-            return '5 - 55 years or above';
+            return '55 years or above';
             break;
             
         default:
